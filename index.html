@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMAR Thumbs | Premium Thumbnail Design</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+
+    <nav class="hover-target">
+        <div class="logo">SAMAR <span>Thumbs</span></div>
+        <div class="menu-toggle hover-target" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="hover-target">Home</a></li>
+            <li><a href="#work" class="hover-target">Work</a></li>
+            <li><a href="#contact-area" class="hover-target">Contact</a></li>
+            <li><a href="#contact-area" class="btn btn-primary hover-target">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero" class="hero">
+        <h1>Thumbnails That <br> <span class="highlight">Dominate The Feed.</span></h1>
+        <p>Premium, high-CTR designs tailored for creators who want to win. 
+           Dark mode aesthetics with neon precision.</p>
+        <div class="hero-btns">
+            <a href="#work" class="btn btn-primary hover-target">View My Work</a>
+            <a href="#contact-area" class="btn btn-outline hover-target">Get Quote</a>
+        </div>
+    </section>
+
+    <section id="work">
+        <div class="section-header">
+            <h2>Selected Works</h2>
+            <p class="subtitle">Curated high-performance designs</p>
+        </div>
+
+        <div class="filter-container">
+            <button class="filter-btn active hover-target" onclick="filterSelection('all')">All</button>
+            <button class="filter-btn hover-target" onclick="filterSelection('gaming')">Gaming</button>
+            <button class="filter-btn hover-target" onclick="filterSelection('finance')">Finance</button>
+            <button class="filter-btn hover-target" onclick="filterSelection('vlog')">Vlog</button>
+        </div>
+
+        <div class="work-grid" id="grid">
+            </div>
+
+        <div style="text-align: center;">
+            <button id="loadMore" class="btn btn-outline hover-target">View More Designs</button>
+        </div>
+    </section>
+
+    <section id="contact-area" class="contact-section">
+        <div class="section-header">
+            <h2>Let's Collaborate</h2>
+            <p class="subtitle">Ready to boost your CTR? Send me a message.</p>
+        </div>
+
+        <div class="form-container hover-target">
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="Your Name" required class="hover-target">
+                    <input type="email" placeholder="Your Email" required class="hover-target">
+                </div>
+                <input type="text" placeholder="Subject / Video Title" class="hover-target">
+                <textarea rows="5" placeholder="Tell me about your project..." required class="hover-target"></textarea>
+                <button type="submit" class="btn btn-primary hover-target" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>SAMAR <span>Thumbs</span></h3>
+                <p>Elevating content creation with psychologically optimized thumbnails.</p>
+                
+                <div class="social-icons-footer">
+                    <a href="https://wa.me/923281088636" target="_blank" class="social-btn hover-target"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-btn hover-target"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn hover-target"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-btn hover-target"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#hero" class="hover-target">Home</a></li>
+                    <li><a href="#work" class="hover-target">Portfolio</a></li>
+                    <li><a href="#contact-area" class="hover-target">Pricing</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#" class="hover-target">Privacy Policy</a></li>
+                    <li><a href="#" class="hover-target">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 SAMAR Thumbs. Designed for High CTR.
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-close hover-target" onclick="closeLightbox()"><i class="fas fa-times"></i></div>
+        <img id="lightbox-img" src="" alt="Full Design">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
